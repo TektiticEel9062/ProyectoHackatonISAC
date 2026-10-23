@@ -1,0 +1,12 @@
+{
+  "name": "statsbomb-360-coach-story",
+  "version": "1.0.0",
+  "private": true,
+  "description": "La Historia de un Entrenador a través de los Datos - StatsBomb 360 Tactical System",
+  "scripts": {
+    "pipeline": ".venv\\Scripts\\python.exe -m src.pipeline",
+    "api": ".venv\\Scripts\\python.exe -m uvicorn src.api.main:app --host 127.0.0.1 --port 8000",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build"
+  }
+}
